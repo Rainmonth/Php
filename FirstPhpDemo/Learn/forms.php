@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .error {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) {
+        $nameErr = "Name is required";
+    } else {
+        $name = test_input($_POST["name"]);
+        // 检查名字是否只包含字母和空格
+        if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
+            $nameErr = "Only letters and white space allowed";
+        }
+    }
+    if (empty($_POST["email"])) {
+        $emailErr = "Email is required";
+    } else {
+        $email = test_input($_POST["email"]);
+        // 检查电邮地址语法是否有效
+        if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email)) {
+            $emailErr = "Invalid email format";
+        }
+    }
+    if (empty($_POST["website"])) {
+        $websiteErr = "";
+    } else {
+        $website = test_input($_POST["website"]);
+        // 检查 URL 地址语言是否有效（此正则表达式同样允许 URL 中的下划线）
+        if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%
+    =~_|]/i", $website)
+        ) {
+            $websiteErr = "Invalid URL";
+        }
+    }
+    if (empty($_POST["comment"])) {
+        $comment = "";
+    } else {
+        $comment = test_input($_POST["comment"]);
+    }
+    if (empty($_POST["gender"])) {
+        $gender = "Gender is required";
+    } else {
+        $gender = test_input($_POST["gender"]);
+    }
+}
+
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+?>
+
+<h2>PHP 验证实例</h2>
+<?php
+// $_SERVER["PHP_SELF"]是一种超全局变量，返回当前指向脚本的文件名
+// 所以下面的表单提交后将会被发送到页面本身
+?>
+<p><span class="error">* 必需的字段</span></p>
+<form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+    姓名：<input type="text" name="name" value="<?php echo $name; ?>"><span class="error">* <?php echo $nameErr; ?></span>
+    <br><br>
+    电邮：<input type="text" name="email" value="<?php echo $email; ?>"><span
+        class="error">* <?php echo $emailErr; ?></span>
+    <br><br>
+    网址：<input type="text" name="website" value="<?php echo $website; ?>"><span
+        class="error">* <?php echo $websiteErr; ?></span>
+    <br><br>
+    评论：<textarea name="comment" rows="5" cols="40"><?php echo $comment; ?></textarea>
+    <br><br>
+    性别：
+    <input type="radio" name="gender" value="female"
+           checked="checked" <?php if (isset($gender) && $gender == "female") {
+        echo "checked";
+    } ?>>女性
+    <input type="radio" name="gender" value="male" <?php if (isset($gender) && $gender == "male") {
+        echo "checked";
+    } ?>>男性<span class="error">* <?php echo $genderErr; ?></span>
+    <br><br>
+    <input type="submit" name="submit" value="提交">
+</form>
+
+<?php
+echo "<h2>您的输入：</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
+</body>
+</html>
