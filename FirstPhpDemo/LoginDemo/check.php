@@ -7,17 +7,12 @@ if ($name == "") {
 } elseif ($password == "") {
     echo "<script type='text/javascript'>alert('请填写密码');location='login.php';</script>";
 } else {
-    $column = collect_data($db);
-    if (($column['name'] == $name) && ($column['password'] == $password)) {
+    $sql = "select * from user where name = '$name' and password = '$password'";
+    $check_query = mysqli_query($db, $sql);
+    if ($result = mysqli_fetch_array($check_query)) {
+        // 登陆成功
         echo "<script type='text/javascript'>alert('登陆成功');location='huanying.html';</script>";
-    } else
+    } else {
         echo "<script type='text/javascript'>alert('密码错误');location='login.php';</script>";
-}
-
-function collect_data($link)
-{
-    $sql = "select * from user";
-    $result = mysqli_query($link, $sql);
-    $column = mysqli_fetch_array($result);
-    return $column;
+    }
 }

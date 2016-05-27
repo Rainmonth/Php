@@ -2,7 +2,6 @@
 
 //避免输出乱码
 header('Content-Type:text/html;charset=utf-8');
-require('library/Http.class.php');
 
 $config = array(
     'ip' => 'demo.fdipzone.com', // 如空则用host代替
@@ -12,8 +11,6 @@ $config = array(
     'errstr' => '',
     'timeout' => 30,
     'url' => '/getapi.php',
-    #'url' => '/postapi.php',
-    #'url' => '/multipart.php'
 );
 
 $formdata = array(
@@ -28,15 +25,3 @@ $filedata = array(
         'path' => 'photo.jpg'
     )
 );
-
-$obj = new HttpRequest();
-$obj->setConfig($config);
-$obj->setFormData($formdata);
-$obj->setFileData($filedata);
-$result = $obj->send('get');
-#$result = $obj->send('post');
-#$result = $obj->send('multipart');
-
-echo '<pre>';
-print_r($result);
-echo '</pre>';
