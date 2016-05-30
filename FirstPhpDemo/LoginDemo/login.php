@@ -24,7 +24,7 @@
 </style>
 <body>
 
-<form method="post" action="check.php">
+<form method="post" action="login_check.php">
     <div class="div">
         用户名<input type="text" name="name">
         密码:<input type="password" name="password">

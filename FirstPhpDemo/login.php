@@ -18,7 +18,7 @@
             <div class="passport-tab" id="login-tabs">
                 <!-- form -->
                 <form class="passport-form passport-form-sign" id="login-form"
-                      action="LoginDemo/check.php" method="post">
+                      action="LoginDemo/login_check.php" method="post">
 
                     <div class="form-item">
                         <div class="form-cont">
