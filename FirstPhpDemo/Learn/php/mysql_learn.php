@@ -1,5 +1,5 @@
 <?php
-include "../library/MysqlUtil.php";
+include '../library/init.php';
 /**
  * Created by PhpStorm.
  * User: Randy
@@ -13,17 +13,5 @@ include "../library/MysqlUtil.php";
  * 3、libmysql.dll文件需要加入到System32文件夹中
  * 4、要重启Apache服务器
  */
-// 数据库配置数组
-$conf = array(
-    'host' => 'localhost',
-    'port' => '3306',
-    'user' => 'root',
-    'password' => 'zh7359431',
-    'db_name' => 'randy_db'
-);
-
-// 面向对象编程
-echo "面向对象：<br>";
-$utilObj = new MysqlUtil($conf);
-$field = $utilObj->_tbFields("persons");
+$field = $sqlObj->_tbFields("persons");
 var_dump($field);

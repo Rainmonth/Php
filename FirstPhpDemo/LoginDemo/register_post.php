@@ -1,5 +1,5 @@
 <?php
-require_once 'mysql_connect.php';
+require_once '../library/init.php';
 $name = $_POST['name'];
 $password = $_POST['password'];
 $pwd_again = $_POST['pwd_again'];
@@ -11,7 +11,7 @@ if ($name == "" || $password == "") {
         echo "<a href='register.php'>重新输入</a>";
     } else {
         $sql = "insert into user values('105','$name','$password')";
-        $result = mysqli_query($db, $sql);
+        $result = $sqlObj->doQuery($sql);
         if (!$result) {
             echo "注册不成功！";
             echo "<a href='register.php'>返回</a>";
