@@ -1,5 +1,5 @@
 <?php
-include '../library/init.php';
+include '../../library/init.php';
 /**
  * Created by PhpStorm.
  * User: Randy
@@ -13,5 +13,5 @@ include '../library/init.php';
  * 3、libmysql.dll文件需要加入到System32文件夹中
  * 4、要重启Apache服务器
  */
-$field = $sqlObj->_tbFields("persons");
+$field = $sqlObj->_tbFields("user");
 var_dump($field);
