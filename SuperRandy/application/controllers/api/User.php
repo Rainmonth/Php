@@ -27,6 +27,18 @@ class User extends CI_Controller
         $data['username'] = $username;
         $data['psw'] = $psw;
         $data['platform'] = $platform;
+        if(empty($data['username'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "username为空"
+            ));
+        }
+        if(empty($data['psw'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "psw为空"
+            ));
+        }
         // 判断用户名是否存在
         if ($this->user_model->is_user_exist($username)) {// 存在
             $login_result = $this->user_model->login($data);
@@ -35,6 +47,7 @@ class User extends CI_Controller
                     'code' => 1,
                     'message' => "登录成功",
                     'user_info' => $login_result['user_info'],
+                    // todo 将user_info的信息利用session或者cookies保存起来
                 ));
             } else {
                 HCommon::output_json([
@@ -66,6 +79,18 @@ class User extends CI_Controller
 //        $platform = $this->input->post('platform');
         $data['username'] = $username;
         $data['psw'] = $psw;
+        if (empty($data['username'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "username为空"
+            ));
+        }
+        if (empty($data['psw'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "psw为空"
+            ));
+        }
 
         if ($this->user_model->is_user_exist($username)) {
             HCommon::output_json(array(
@@ -124,6 +149,13 @@ class User extends CI_Controller
     public function getUserInfo()
     {
         $id = $this->input->post('id');
+        if (empty($id)) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "id为空",
+                'data' => $id
+            ));
+        }
         $result_array = $this->user_model->get_user_info($id);
         if ($result_array['code'] == 0) {
             HCommon::output_json(array(
@@ -149,6 +181,24 @@ class User extends CI_Controller
         $data['username'] = $this->input->post('username');
         $data['psw'] = $this->input->post('psw');
         $data['avatar'] = $this->input->post('avatar');
+        if (empty($data['id'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "id为空"
+            ));
+        }
+        if (empty($data['username'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "username为空"
+            ));
+        }
+        if (empty($data['psw'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "psw为空"
+            ));
+        }
 
         $result = $this->user_model->update_user_info($data);
         if ($result < 1) {
