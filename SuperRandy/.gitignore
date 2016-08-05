@@ -1,6 +1,7 @@
 .DS_Store
 
 application/cache/*
+application/config/database.php
 !application/cache/index.html
 !application/cache/.htaccess
 
@@ -25,3 +26,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
+
