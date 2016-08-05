@@ -8,7 +8,7 @@
 
 <div class="api_container">
     <h3>注册</h3>
-    <form name="" method="POST" action="http://rainmonth.com//php/SuperRandy/index.php/api/User/register">
+    <form name="" method="POST" action="../api/User/register">
         <p>手机号 : <input type="text" name="username" value=""/></p>
         <p>密码 : <input type="password" name="psw" value=""/></p>
         <p><input type="submit" name="" value="立即注册"/></p>
@@ -17,7 +17,7 @@
 
 <div class="api_container">
     <h3>登录</h3>
-    <form name="" method="POST" action="http://rainmonth.com//php/SuperRandy/index.php/api/User/login">
+    <form name="" method="POST" action="../api/User/login">
         <p>手机号 : <input type="text" name="username" value=""/></p>
         <p>密码 : <input type="password" name="psw" value=""/></p>
         <p><input type="submit" name="" value="立即登录"/></p>
@@ -25,15 +25,15 @@
 </div>
 <div class="api_container">
     <h3>获取用户信息</h3>
-    <form name="" method="POST" action="http://rainmonth.com/php/SuperRandy/index.php/api/User/getUserInfo">
+    <form name="" method="POST" action="../api/User/getUserInfo">
         <p>id : <input type="text" name="username" value=""/></p>
-        <p><input type="submit" name="" value="立即登录"/></p>
+        <p><input type="submit" name="" value="立即获取"/></p>
     </form>
 </div>
 
 <div class="api_container">
     <h3>删除用户信息</h3>
-    <form name="" method="POST" action="http://rainmonth.com//php/SuperRandy/index.php/api/User/deleteUserInfo">
+    <form name="" method="POST" action="../api/User/deleteUserInfo">
         <p>id : <input type="text" name="id" value=""/></p>
         <p><input type="submit" name="" value="删除用户"/></p>
     </form>
