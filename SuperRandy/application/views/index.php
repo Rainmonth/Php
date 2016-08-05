@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Welcome to CodeIgniter</title>
+    <title>荏苒追寻</title>
 
     <style type="text/css">
 
@@ -67,13 +67,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         网站主题内容
     </p>
     <p class="content">
-        <a href="http://localhost/Php/SuperRandy/Welcome/navToApiDemo">Api Demo页面</a>
+        <a href="Welcome/navToApiDemo">Api Demo页面</a>
     </p>
     <p class="content">
-        <a href="http://localhost/Php/SuperRandy/Welcome/navToApiIndex">Api Index页面</a>
+        <a href="Welcome/navToApiIndex">Api Index页面</a>
     </p>
     <p class="content">
-        <a href="http://localhost/Php/SuperRandy/Welcome/navToApiIndex">Api Index页面</a>
+        <a href="Welcome/navToApiIndex">Api Index页面</a>
     </p>
     <p class="footer">Page rendered in <strong>{elapsed_time}</strong>
         seconds. <?php echo (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
