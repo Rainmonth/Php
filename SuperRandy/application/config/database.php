@@ -76,35 +76,11 @@ $query_builder = TRUE;
 /**
  * 本地环境
  */
-$db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'zh7359431',
-	'database' => 'super_randy_db',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => 'sr',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-/**
- * 网络环境
- */
 //$db['default'] = array(
 //	'dsn'	=> '',
-//	'hostname' => '123.59.130.154:3306',
-//	'username' => 'admin',
-//	'password' => 'admin',
+//	'hostname' => 'localhost',
+//	'username' => 'root',
+//	'password' => 'zh7359431',
 //	'database' => 'super_randy_db',
 //	'dbdriver' => 'mysqli',
 //	'dbprefix' => 'sr',
@@ -121,3 +97,27 @@ $db['default'] = array(
 //	'failover' => array(),
 //	'save_queries' => TRUE
 //);
+/**
+ * 网络环境
+ */
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => '123.59.130.154:3306',
+	'username' => 'admin',
+	'password' => 'admin',
+	'database' => 'super_randy_db',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => 'sr',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
