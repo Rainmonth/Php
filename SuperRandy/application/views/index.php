@@ -67,13 +67,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         网站主题内容
     </p>
     <p class="content">
-        <a href="http://rainmonth.com/Php/SuperRandy/index.php/Welcome/navToApiDemo">Api Demo页面</a>
+        <a href="http://rainmonth.com/php/SuperRandy/index.php/Welcome/navToApiDemo">Api Demo页面</a>
     </p>
     <p class="content">
-        <a href="http://rainmonth.com/Php/SuperRandy/index.php/Welcome/navToApiIndex">Api Index页面</a>
+        <a href="http://rainmonth.com/php/SuperRandy/index.php/Welcome/navToApiIndex">Api Index页面</a>
     </p>
     <p class="content">
-        <a href="http://rainmonth.com/Php/SuperRandy/index.php/Welcome/navToApiIndex">Api Index页面</a>
+        <a href="http://rainmonth.com/php/SuperRandy/index.php/Welcome/navToApiIndex">Api Index页面</a>
     </p>
     <p class="footer">Page rendered in <strong>{elapsed_time}</strong>
         seconds. <?php echo (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
