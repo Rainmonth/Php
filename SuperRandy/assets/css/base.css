@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e21;
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(top, #123352, #1e1e21);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#123352', endColorstr='#1e1e21', GradientType=0)";
+    background-image: linear-gradient(to bottom, #123352, #1e1e21);
+}
+
+.feature-overview {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
+.feature-overview .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.feature-overview .container::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.feature-overview .container .features .feature a {
+    text-decoration: none;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+}
+
+.feature-overview .container .features .feature h2 {
+    font-family: 'Open Sans Light', X-LocaleSpecific-Light, 'Open Sans', X-LocaleSpecific, sans-serif;
+    font-weight: normal;
+    display: block;
+    margin: 0 0 12px 0;
+    line-height: 1;
+    text-shadow: none;
+    color: white;
+    letter-spacing: -0.035em;
+}
+
+.feature-overview .container .features .feature p {
+    color: #fff;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+}
+
+.feature-overview .container .features .feature a.more {
+    color: #2f8aca;
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+}
+
+.feature-overview .container .features .feature a.more::after {
+    content: "\00A0\00BB";
+    white-space: nowrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.features .feature {
+    float: left;
+    width: 220px;
+    margin: 0 10px 60px;
+    padding: 10px;
+    text-align: center;
+}
+
+.feature .screen-shot {
+    width: 218px;
+    height: 118px;
+    border-radius: .5em;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.feature:nth-child(3n+1) {
+    clear: left;
+}
