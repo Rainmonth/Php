@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,18 +13,48 @@ body {
     background-image: linear-gradient(to bottom, #123352, #1e1e21);
 }
 
-.feature-overview {
-    width: 900px;
-    margin: 0 auto;
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+
+.border-button {
+    background-color: #1f1d1d;
+    border-radius: 0.5em;
+    border: 2px solid #229955;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
     display: block;
 }
 
-.feature-overview .container {
-    padding-top: 80px;
-    padding-bottom: 80px;
+.border-button-horizontal {
+    background-color: #1f1d1d;
+    border-radius: 0.5em;
+    border: 2px solid #229955;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
+    display: inline-block;
 }
 
-.feature-overview .container::after {
+/*header css*/
+.header {
+    background-color: #1e1e21;
+}
+
+.header .container {
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.header .container::after {
     display: block;
     visibility: hidden;
     height: 0;
@@ -27,12 +62,72 @@ body {
     content: ".";
 }
 
-.feature-overview .container .features .feature a {
+.header .nav-left {
+    float: left;
+    margin-left: 10px;
+}
+
+.header .nav-right {
+    float: right;
+}
+
+.header .nav-right ul li {
+    float: left;
+    padding: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: .5em;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/*main-content css*/
+.main-content {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
+.main-content::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.left-content {
+    width: 20%;
+    float: left;
+    /*background-color: red;*/
+    align-content: center;
+}
+
+.right-content {
+    width: 80%;
+    float: right;
+    display: block;
+    /*background-color: #00CC00;*/
+}
+
+.right-content .container {
+    text-align: center;
+    align-items: center;
+}
+
+.right-content .container::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.right-content .container .feature a {
     text-decoration: none;
     font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
-.feature-overview .container .features .feature h2 {
+.right-content .container .feature h2 {
     font-family: 'Open Sans Light', X-LocaleSpecific-Light, 'Open Sans', X-LocaleSpecific, sans-serif;
     font-weight: normal;
     display: block;
@@ -43,42 +138,73 @@ body {
     letter-spacing: -0.035em;
 }
 
-.feature-overview .container .features .feature p {
+.right-content .container .feature p {
     color: #fff;
     font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
-.feature-overview .container .features .feature a.more {
+.right-content .container .feature a.more {
     color: #2f8aca;
     font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
 }
 
-.feature-overview .container .features .feature a.more::after {
+.right-content .container .feature a.more::after {
     content: "\00A0\00BB";
     white-space: nowrap;
 }
 
-ul {
-    list-style: none;
-}
-
-.features .feature {
+.feature {
     float: left;
-    width: 220px;
+    width: 280px;
     margin: 0 10px 60px;
     padding: 10px;
     text-align: center;
 }
 
 .feature .screen-shot {
-    width: 218px;
-    height: 118px;
+    width: 278px;
+    height: 240px;
     border-radius: .5em;
     border: 2px solid rgba(255, 255, 255, 0.6);
     display: block;
     margin: 0 auto 30px;
 }
 
-.feature:nth-child(3n+1) {
+.feature:nth-child(2n+1) {
     clear: left;
+}
+
+.footer {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    /*background-color: #ff66e3;*/
+}
+
+.footer::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.footer .container {
+    width: 100%;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 auto;
+    line-height: 100%;
+    text-align: center;
+    align-items: center;
+    /*background-color: #52ffba;*/
+}
+
+.footer .container::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
 }

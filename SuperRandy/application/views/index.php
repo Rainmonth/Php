@@ -5,84 +5,7 @@
     <title>荏苒追寻</title>
     <link type="text/css" rel="stylesheet" href="assets/css/base.css">
     <style>
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-        }
-
-        .header {
-            background-color: #1e1e21;
-        }
-
-        .header .container{
-            width: 900px;
-            margin: 0 auto;
-        }
-
-        .header .container::after {
-            display: block;
-            visibility: hidden;
-            height: 0;
-            clear: both;
-            content: ".";
-        }
-
-        .header .nav-left {
-            float: left;
-            margin-left: 10px;
-        }
-
-        .header .nav-right {
-            float: right;
-        }
-
-        .header .nav-right ul li {
-            float: left;
-            padding: 0 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            border-radius: .5em;
-            border: 2px solid rgba(255, 255, 255, 0.6);
-        }
-
-        .footer {
-            width: 900px;
-            margin: 0 auto;
-            display: block;
-        }
-
-        .footer .container {
-            margin: 0 auto;
-        }
-
-        .footer .container ul {
-            margin: 0 auto;
-            display: block;
-        }
-
-        .footer .container ul::after {
-            display: block;
-            visibility: hidden;
-            height: 0;
-            clear: both;
-            content: ".";
-        }
-
-        .footer .container ul li {
-            float: left;
-            display: block;
-            padding: 10px 10px;
-            margin: 0 10px;
-            align-items: center;
-        }
-
-        .footer .container::after {
-            display: block;
-            visibility: hidden;
-            height: 0;
-            clear: both;
-            content: ".";
-        }
+w
     </style>
 </head>
 <body>
@@ -120,10 +43,27 @@
     </div>
 </section>
 
-<section class="feature-overview">
-    <div class="container">
-        <ul class="features">
-            <li class="feature">
+<section class="main-content">
+    <div class="left-content">
+        <a class="border-button" href="#">菜单一</a>
+        <a class="border-button" href="#">菜单二</a>
+        <a class="border-button" href="#">菜单三</a>
+        <a class="border-button" href="#">菜单四</a>
+        <a class="border-button" href="#">菜单五</a>
+        <a class="border-button" href="#">菜单六</a>
+        <a class="border-button" href="#">菜单七</a>
+        <a class="border-button" href="#">菜单八</a>
+        <a class="border-button" href="#">菜单九</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+    </div>
+    <div class="right-content">
+        <div class="container">
+            <div class="feature">
                 <a href="#" rel="external">
                     <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
                 </a>
@@ -134,8 +74,8 @@
                 <a class="more" href="Welcome/navToApiDemo" rel="external">
                     Api Demo页面
                 </a>
-            </li>
-            <li class="feature">
+            </div>
+            <div class="feature">
                 <a href="#" rel="external">
                     <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
                 </a>
@@ -144,8 +84,8 @@
                     登录背景页面详细说明
                 </p>
                 <a class="more" href="Welcome/navToApiIndex" rel="external">Api Index页面</a>
-            </li>
-            <li class="feature">
+            </div>
+            <div class="feature">
                 <a href="#" rel="external">
                     <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
                 </a>
@@ -154,8 +94,8 @@
                     登录背景页面详细说明
                 </p>
                 <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a>
-            </li>
-            <li class="feature">
+            </div>
+            <div class="feature">
                 <a href="#" rel="external">
                     <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
                 </a>
@@ -163,8 +103,8 @@
                 <p>
                     登录背景页面详细说明
                 </p>
-                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></li>
-            <li class="feature">
+                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
+            <div class="feature">
                 <a href="#" rel="external">
                     <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
                 </a>
@@ -172,8 +112,8 @@
                 <p>
                     登录背景页面详细说明
                 </p>
-                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></li>
-            <li class="feature">
+                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
+            <div class="feature">
                 <a href="#" rel="external">
                     <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
                 </a>
@@ -181,21 +121,18 @@
                 <p>
                     登录背景页面详细说明
                 </p>
-                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></li>
-        </ul>
+                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
+        </div>
     </div>
-
 </section>
 
 <section class="footer">
     <div class="container">
-        <ul>
-            <li><a href="#">Copyright</a></li>
-            <li><a href="#">荏苒小站</a></li>
-            <li><a href="#">网站支持</a></li>
-            <li><a href="#">免责声明</a></li>
-            <li><a href="#">关于</a></li>
-        </ul>
+        <a class="border-button-horizontal" href="#">Copyright</a>
+        <a class="border-button-horizontal" href="#">荏苒小站</a>
+        <a class="border-button-horizontal" href="#">网站支持</a>
+        <a class="border-button-horizontal" href="#">免责声明</a>
+        <a class="border-button-horizontal" href="#">关于</a>
     </div>
 </section>
 
