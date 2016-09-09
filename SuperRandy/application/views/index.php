@@ -5,7 +5,7 @@
     <title>荏苒追寻</title>
     <link type="text/css" rel="stylesheet" href="assets/css/base.css">
     <style>
-w
+
     </style>
 </head>
 <body>
@@ -13,28 +13,28 @@ w
 <section class="header">
     <div class="container">
         <div class="nav-left">
-            <a href="#"><h1>荏苒追寻</h1></a>
+            <a class="button" href="#"><h1>荏苒追寻</h1></a>
         </div>
 
         <div class="nav-right">
             <ul>
-                <li class="menu-item">
-                    <a href="#">
+                <li>
+                    <a class="border-button-horizontal" href="Welcome/navToMemory" target="_self">
                         记忆
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a href="#">
+                <li>
+                    <a class="border-button-horizontal" href="Welcome/navToMemory">
                         当下
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a href="#">
+                <li>
+                    <a class="border-button-horizontal" href="Welcome/navToWish">
                         憧憬
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a href="#">
+                <li>
+                    <a class="border-button-horizontal" href="Welcome/navToWonder">
                         漫游
                     </a>
                 </li>
@@ -45,7 +45,7 @@ w
 
 <section class="main-content">
     <div class="left-content">
-        <a class="border-button" href="#">菜单一</a>
+        <a class="border-button" href="http://jsoneditoronline.org/">JSON格式化</a>
         <a class="border-button" href="#">菜单二</a>
         <a class="border-button" href="#">菜单三</a>
         <a class="border-button" href="#">菜单四</a>
