@@ -22,6 +22,14 @@ ul {
     list-style: none;
 }
 
+.button {
+    border-radius: 0.5em;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
+    display: block;
+}
+
 .border-button {
     background-color: #1f1d1d;
     border-radius: 0.5em;
@@ -50,8 +58,7 @@ ul {
 .header .container {
     width: 900px;
     margin: 0 auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    /*background-color: purple;*/
 }
 
 .header .container::after {
@@ -64,20 +71,21 @@ ul {
 
 .header .nav-left {
     float: left;
-    margin-left: 10px;
+}
+
+.header .nav-left a h1 {
+    text-align: center;
 }
 
 .header .nav-right {
     float: right;
+    text-align: center;
 }
 
 .header .nav-right ul li {
     float: left;
-    padding: 0 10px;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: .5em;
-    border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 /*main-content css*/
