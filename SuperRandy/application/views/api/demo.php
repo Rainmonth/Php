@@ -46,7 +46,7 @@
 <div class="api_container">
     <div class="api_name">获取用户信息</div>
     <form name="" method="POST" action="../api/User/getUserInfo">
-        <label>id :<input type="text" name="username" value=""/></label>
+        <label>id :<input type="text" name="id" value=""/></label>
         <input type="submit" name="" value="立即获取"/>
     </form>
 </div>
