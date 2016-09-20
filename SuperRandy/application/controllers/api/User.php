@@ -74,15 +74,31 @@ class User extends CI_Controller
      */
     public function register()
     {
+        $mobile = $this->input->post("mobile");
         $username = $this->input->post('username');
         $psw = $this->input->post('psw');
+        $email = $this->input->post('email');
 //        $platform = $this->input->post('platform');
+        $data['mobile'] = $mobile;
         $data['username'] = $username;
         $data['psw'] = $psw;
+        $data['email'] = $email;
+        if (empty($data['mobile'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "mobile为空"
+            ));
+        }
         if (empty($data['username'])) {
             HCommon::output_json(array(
                 'code' => 0,
                 'message' => "username为空"
+            ));
+        }
+        if (empty($data['email'])) {
+            HCommon::output_json(array(
+                'code' => 0,
+                'message' => "email为空"
             ));
         }
         if (empty($data['psw'])) {
@@ -96,20 +112,20 @@ class User extends CI_Controller
             HCommon::output_json(array(
                 'code' => 0,
                 'message' => "注册失败,该账号已存在",
-                'data' => $data
+                'user_info' => $data
             ));
         } else {
             if ($this->user_model->register($data)) {
                 HCommon::output_json(array(
                     'code' => 1,
                     'message' => "注册成功",
-                    'data' => $data
+                    'user_info' => $data
                 ));
             } else {
                 HCommon::output_json(array(
                     'code' => 0,
                     'message' => "注册失败",
-                    'data' => $data
+                    'user_info' => $data
                 ));
             }
         }
