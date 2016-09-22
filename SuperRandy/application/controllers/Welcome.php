@@ -24,6 +24,10 @@ class Welcome extends CI_Controller
         $this->load->view('index');
     }
 
+//    public function navTo($pageLocation = 'index') {
+//        $this->load->view($pageLocation);
+//    }
+
     public function navToApiDemo()
     {
         $this->load->view('api/demo');
@@ -32,5 +36,21 @@ class Welcome extends CI_Controller
     public function navToApiIndex()
     {
 		$this->load->view('api/index');
+    }
+
+    public function navToMemory() {
+        $this->load->view('pages/nav_memory');
+    }
+
+    public function navToCurrent() {
+        $this->load->view('pages/nav_current');
+    }
+
+    public function navToWish() {
+        $this->load->view('pages/nav_wish');
+    }
+
+    public function navToWonder() {
+        $this->load->view('pages/nav_wonder');
     }
 }

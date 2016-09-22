@@ -1,84 +1,140 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
     <title>荏苒追寻</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/base.css">
+    <style>
 
-    <style type="text/css">
-
-        ::selection {
-            background-color: #00FF00;
-            color: white;
-        }
-
-        ::-moz-selection {
-            background-color: #808000;
-            color: white;
-        }
-
-        body {
-            background-color: #fff;
-            margin: 40px;
-            font: 13px/20px normal Helvetica, Arial, sans-serif;
-            color: #4F5155;
-        }
-
-        h1 {
-            color: #444;
-            background-color: transparent;
-            border-bottom: 1px solid #D0D0D0;
-            font-size: 19px;
-            font-weight: normal;
-            margin: 0 0 14px 0;
-            padding: 14px 15px 10px 15px;
-        }
-
-        p.content {
-            text-align: center;
-            font-size: 16px;
-            padding: 0 10px 0 10px;
-
-        }
-
-        p.footer {
-            text-align: right;
-            font-size: 11px;
-            border-top: 1px solid #D0D0D0;
-            line-height: 32px;
-            padding: 0 10px 0 10px;
-            margin: 20px 0 0 0;
-        }
-
-        #container {
-            margin: 10px;
-            border: 1px solid #D0D0D0;
-            box-shadow: 0 0 8px #D0D0D0;
-        }
     </style>
 </head>
 <body>
 
-<div id="container">
-    <h1>欢迎来到rainmonth.com</h1>
+<section class="header">
+    <div class="container">
+        <div class="nav-left">
+            <a class="button" href="#"><h1>荏苒追寻</h1></a>
+        </div>
 
-    <p class="content">
-        网站主题内容
-    </p>
-    <p class="content">
-        <a href="Welcome/navToApiDemo">Api Demo页面</a>
-    </p>
-    <p class="content">
-        <a href="Welcome/navToApiIndex">Api Index页面</a>
-    </p>
-    <p class="content">
-        <a href="Welcome/navToApiIndex">Api Index页面</a>
-    </p>
-    <p class="footer">Page rendered in <strong>{elapsed_time}</strong>
-        seconds. <?php echo (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
-    </p>
-</div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <a class="border-button-horizontal" href="./Welcome/navToMemory" target="_self">
+                        记忆
+                    </a>
+                </li>
+                <li>
+                    <a class="border-button-horizontal" href="./Welcome/navToCurrent" target="_self">
+                        当下
+                    </a>
+                </li>
+                <li>
+                    <a class="border-button-horizontal" href="./Welcome/navToWish" target="_self">
+                        憧憬
+                    </a>
+                </li>
+                <li>
+                    <a class="border-button-horizontal" href="./Welcome/navToWonder" target="_self">
+                        漫游
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="main-content">
+    <div class="left-content">
+        <a class="border-button" href="http://jsoneditoronline.org/" target="_blank">JSON格式化</a>
+        <a class="border-button" href="http://123.59.130.154/phpmyadmin" target="_blank">mysql管理后台</a>
+        <a class="border-button" href="#">菜单三</a>
+        <a class="border-button" href="#">菜单四</a>
+        <a class="border-button" href="#">菜单五</a>
+        <a class="border-button" href="#">菜单六</a>
+        <a class="border-button" href="#">菜单七</a>
+        <a class="border-button" href="#">菜单八</a>
+        <a class="border-button" href="#">菜单九</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+        <a class="border-button" href="#">菜单十</a>
+    </div>
+    <div class="right-content">
+        <div class="container">
+            <div class="feature">
+                <a href="#" rel="external">
+                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
+                </a>
+                <h2>登录背景页</h2>
+                <p>
+                    登录背景页面详细说明
+                </p>
+                <a class="more" href="Welcome/navToApiDemo" rel="external">
+                    Api Demo页面
+                </a>
+            </div>
+            <div class="feature">
+                <a href="#" rel="external">
+                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
+                </a>
+                <h2>登录背景页</h2>
+                <p>
+                    登录背景页面详细说明
+                </p>
+                <a class="more" href="Welcome/navToApiIndex" rel="external">Api Index页面</a>
+            </div>
+            <div class="feature">
+                <a href="#" rel="external">
+                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
+                </a>
+                <h2>登录背景页</h2>
+                <p>
+                    登录背景页面详细说明
+                </p>
+                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a>
+            </div>
+            <div class="feature">
+                <a href="#" rel="external">
+                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
+                </a>
+                <h2>登录背景页</h2>
+                <p>
+                    登录背景页面详细说明
+                </p>
+                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
+            <div class="feature">
+                <a href="#" rel="external">
+                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
+                </a>
+                <h2>登录背景页</h2>
+                <p>
+                    登录背景页面详细说明
+                </p>
+                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
+            <div class="feature">
+                <a href="#" rel="external">
+                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
+                </a>
+                <h2>登录背景页</h2>
+                <p>
+                    登录背景页面详细说明
+                </p>
+                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <a class="border-button-horizontal" href="#">Copyright</a>
+        <a class="border-button-horizontal" href="#">荏苒小站</a>
+        <a class="border-button-horizontal" href="#">网站支持</a>
+        <a class="border-button-horizontal" href="#">免责声明</a>
+        <a class="border-button-horizontal" href="#">关于</a>
+    </div>
+</section>
 
 </body>
 </html>

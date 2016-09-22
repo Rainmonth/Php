@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e21;
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(top, #123352, #1e1e21);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#123352', endColorstr='#1e1e21', GradientType=0)";
+    background-image: linear-gradient(to bottom, #123352, #1e1e21);
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+
+.button {
+    border-radius: 0.5em;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
+    display: block;
+}
+
+.border-button {
+    background-color: #1f1d1d;
+    border-radius: 0.5em;
+    border: 2px solid #229955;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
+    display: block;
+}
+
+.border-button-horizontal {
+    background-color: #1f1d1d;
+    border-radius: 0.5em;
+    border: 2px solid #229955;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+/*header css*/
+.header {
+    background-color: #1e1e21;
+}
+
+.header .container {
+    width: 900px;
+    margin: 0 auto;
+    /*background-color: purple;*/
+}
+
+.header .container::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.header .nav-left {
+    float: left;
+}
+
+.header .nav-left a h1 {
+    text-align: center;
+}
+
+.header .nav-right {
+    float: right;
+    text-align: center;
+}
+
+.header .nav-right ul li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*main-content css*/
+.main-content {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
+.main-content::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.left-content {
+    width: 20%;
+    float: left;
+    /*background-color: red;*/
+    align-content: center;
+}
+
+.right-content {
+    width: 80%;
+    float: right;
+    display: block;
+    /*background-color: #00CC00;*/
+}
+
+.right-content .container {
+    text-align: center;
+    align-items: center;
+}
+
+.right-content .container::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.right-content .container .feature a {
+    text-decoration: none;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+}
+
+.right-content .container .feature h2 {
+    font-family: 'Open Sans Light', X-LocaleSpecific-Light, 'Open Sans', X-LocaleSpecific, sans-serif;
+    font-weight: normal;
+    display: block;
+    margin: 0 0 12px 0;
+    line-height: 1;
+    text-shadow: none;
+    color: white;
+    letter-spacing: -0.035em;
+}
+
+.right-content .container .feature p {
+    color: #fff;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+}
+
+.right-content .container .feature a.more {
+    color: #2f8aca;
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+}
+
+.right-content .container .feature a.more::after {
+    content: "\00A0\00BB";
+    white-space: nowrap;
+}
+
+.feature {
+    float: left;
+    width: 280px;
+    margin: 0 10px 60px;
+    padding: 10px;
+    text-align: center;
+}
+
+.feature .screen-shot {
+    width: 278px;
+    height: 240px;
+    border-radius: .5em;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.feature:nth-child(2n+1) {
+    clear: left;
+}
+
+.footer {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    /*background-color: #ff66e3;*/
+}
+
+.footer::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.footer .container {
+    width: 100%;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 auto;
+    line-height: 100%;
+    text-align: center;
+    align-items: center;
+    /*background-color: #52ffba;*/
+}
+
+.footer .container::after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+}

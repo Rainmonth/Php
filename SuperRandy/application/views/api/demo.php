@@ -29,7 +29,9 @@
 <div class="api_container">
     <div class="api_name">注册</div>
     <form name="" method="POST" action="../api/User/register">
-        <label>手机号 :<input type="text" name="username" value=""/></label>
+        <label>手机号 :<input type="text" name="mobile" value=""/></label>
+        <label>用户名 :<input type="text" name="username" value=""/></label>
+        <label>邮箱 :<input type="text" name="email" value=""/></label>
         <label>密码 :<input type="password" name="psw" value=""/></label>
         <input type="submit" name="" value="立即注册"/>
     </form>
@@ -46,8 +48,8 @@
 <div class="api_container">
     <div class="api_name">获取用户信息</div>
     <form name="" method="POST" action="../api/User/getUserInfo">
-        <label>id :<input type="text" name="username" value=""/></label>
-        <input type="submit" name="" value="立即登录"/>
+        <label>id :<input type="text" name="id" value=""/></label>
+        <input type="submit" name="" value="立即获取"/>
     </form>
 </div>
 
