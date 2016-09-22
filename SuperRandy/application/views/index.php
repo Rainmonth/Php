@@ -19,22 +19,22 @@
         <div class="nav-right">
             <ul>
                 <li>
-                    <a class="border-button-horizontal" href="Welcome/navToMemory" target="_self">
+                    <a class="border-button-horizontal" href="./Welcome/navToMemory" target="_self">
                         记忆
                     </a>
                 </li>
                 <li>
-                    <a class="border-button-horizontal" href="Welcome/navToMemory">
+                    <a class="border-button-horizontal" href="./Welcome/navToCurrent" target="_self">
                         当下
                     </a>
                 </li>
                 <li>
-                    <a class="border-button-horizontal" href="Welcome/navToWish">
+                    <a class="border-button-horizontal" href="./Welcome/navToWish" target="_self">
                         憧憬
                     </a>
                 </li>
                 <li>
-                    <a class="border-button-horizontal" href="Welcome/navToWonder">
+                    <a class="border-button-horizontal" href="./Welcome/navToWonder" target="_self">
                         漫游
                     </a>
                 </li>
@@ -45,8 +45,8 @@
 
 <section class="main-content">
     <div class="left-content">
-        <a class="border-button" href="http://jsoneditoronline.org/">JSON格式化</a>
-        <a class="border-button" href="#">菜单二</a>
+        <a class="border-button" href="http://jsoneditoronline.org/" target="_blank">JSON格式化</a>
+        <a class="border-button" href="http://123.59.130.154/phpmyadmin" target="_blank">mysql管理后台</a>
         <a class="border-button" href="#">菜单三</a>
         <a class="border-button" href="#">菜单四</a>
         <a class="border-button" href="#">菜单五</a>
