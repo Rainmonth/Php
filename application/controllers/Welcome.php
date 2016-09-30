@@ -53,4 +53,8 @@ class Welcome extends CI_Controller
     public function navToWonder() {
         $this->load->view('pages/nav_wonder');
     }
+
+    public function navToGallery() {
+        $this->load->view('api/gallery');
+    }
 }
