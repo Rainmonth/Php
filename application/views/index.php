@@ -48,7 +48,7 @@
         <a class="border-button" href="http://jsoneditoronline.org/" target="_blank">JSON格式化</a>
         <a class="border-button" href="http://123.59.130.154/phpmyadmin" target="_blank">mysql管理后台</a>
         <a class="border-button" href="http://f2er.club/">最牛前端</a>
-        <a class="border-button" href="./Welcom/navToGallery>相册</a>
+        <a class="border-button" href="./Welcome/navToGallery">相册</a>
         <a class="border-button" href="#">菜单五</a>
         <a class="border-button" href="#">菜单六</a>
         <a class="border-button" href="#">菜单七</a>

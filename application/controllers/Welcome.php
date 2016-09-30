@@ -55,6 +55,6 @@ class Welcome extends CI_Controller
     }
 
     public function navToGallery() {
-        $this->load->view('api/gallery');
+        $this->load->view('api/gallery.html');
     }
 }
