@@ -35,26 +35,41 @@ class Welcome extends CI_Controller
 
     public function navToApiIndex()
     {
-		$this->load->view('api/index');
+        $this->load->view('api/index');
     }
 
-    public function navToMemory() {
+    public function navToMemory()
+    {
         $this->load->view('pages/nav_memory');
     }
 
-    public function navToCurrent() {
+    public function navToCurrent()
+    {
         $this->load->view('pages/nav_current');
     }
 
-    public function navToWish() {
+    public function navToWish()
+    {
         $this->load->view('pages/nav_wish');
     }
 
-    public function navToWonder() {
+    public function navToWonder()
+    {
         $this->load->view('pages/nav_wonder');
     }
 
-    public function navToGallery() {
+    public function navToGallery()
+    {
         $this->load->view('api/gallery.html');
+    }
+
+    public function navToLens()
+    {
+        $this->load->view('demos/lens');
+    }
+
+    public function navToLensTop()
+    {
+        $this->load->view('lens');
     }
 }
