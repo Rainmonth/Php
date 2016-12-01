@@ -68,5 +68,12 @@
     </form>
 </div>
 
+<div class="api_container">
+    <div class="api_name">打印当前cookies</div>
+    <form name="" method="GET" action="../api/User/printCookies">
+        <input type="submit" name="" value="打印cookies"/>
+    </form>
+</div>
+
 </body>
 </html>
