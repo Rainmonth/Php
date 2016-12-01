@@ -27,13 +27,13 @@ class User extends CI_Controller
         $data['username'] = $username;
         $data['psw'] = $psw;
         $data['platform'] = $platform;
-        if(empty($data['username'])) {
+        if (empty($data['username'])) {
             HCommon::output_json(array(
                 'code' => 0,
                 'message' => "username为空"
             ));
         }
-        if(empty($data['psw'])) {
+        if (empty($data['psw'])) {
             HCommon::output_json(array(
                 'code' => 0,
                 'message' => "psw为空"
@@ -43,6 +43,18 @@ class User extends CI_Controller
         if ($this->user_model->is_user_exist($username)) {// 存在
             $login_result = $this->user_model->login($data);
             if ($login_result['code'] == 1) {
+                $user_info = $login_result['user_info'];
+                /**
+                 * 第一种方式：采用php原生方式
+                 */
+//                setcookie("id", $user_info['id'], 86500);
+//                setcookie("username", $user_info['username'], 86500);
+
+                /**
+                 * 第二种方式：采用Ci的set_cookies 方法
+                 */
+                $this->input->set_cookie("id", $user_info['id'], 60);
+                $this->input->set_cookie("username", $user_info['username'], 60);
                 HCommon::output_json(array(
                     'code' => 1,
                     'message' => "登录成功",
@@ -257,5 +269,27 @@ class User extends CI_Controller
     public function logout()
     {
 
+    }
+
+    /**
+     * 打印cookies信息
+     */
+    public function printCookies()
+    {
+        /**
+         * 第一种：原生
+         */
+//        if (isset($_COOKIE['id'])) {
+//            echo $_COOKIE['id'];
+//        }
+//        if (isset($_COOKEI['username'])) {
+//            echo $_COOKIE['username'];
+//        }
+        /**
+         * 第二种获取cookies方法：CI
+         */
+        echo $this->input->cookie("id");//适用于控制器
+        echo $this->input->cookie("username");//适用于控制器
+        // 打印cookies
     }
 }
