@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>荏苒追寻</title>
-    <link type="text/css" rel="stylesheet" href="assets/css/base.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/base.css">
     <style>
 
     </style>
@@ -18,25 +18,13 @@
 
         <div class="nav-right">
             <ul>
-                <li>
-                    <a class="border-button-horizontal" href="./Welcome/navToMemory" target="_self">
-                        记忆
-                    </a>
+                <li><a class="border-button-horizontal" href="../Welcome/navToMemory" target="_self">记忆</a>
                 </li>
-                <li>
-                    <a class="border-button-horizontal" href="./Welcome/navToCurrent" target="_self">
-                        当下
-                    </a>
+                <li><a class="border-button-horizontal" href="../Welcome/navToCurrent" target="_self">当下</a>
                 </li>
-                <li>
-                    <a class="border-button-horizontal" href="./Welcome/navToWish" target="_self">
-                        憧憬
-                    </a>
+                <li><a class="border-button-horizontal" href="../Welcome/navToWish" target="_self">憧憬</a>
                 </li>
-                <li>
-                    <a class="border-button-horizontal" href="./Welcome/navToWonder" target="_self">
-                        漫游
-                    </a>
+                <li><a class="border-button-horizontal" href="../Welcome/navToWonder" target="_self">漫游</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +36,7 @@
         <a class="border-button" href="http://jsoneditoronline.org/" target="_blank">JSON格式化</a>
         <a class="border-button" href="http://123.59.130.154/phpmyadmin" target="_blank">mysql管理后台</a>
         <a class="border-button" href="http://f2er.club/">最牛前端</a>
-        <a class="border-button" href="./Welcome/navToGallery">相册</a>
+        <a class="border-button" href="../Welcome/navToGallery">相册</a>
         <a class="border-button" href="#">菜单五</a>
         <a class="border-button" href="#">菜单六</a>
         <a class="border-button" href="#">菜单七</a>
@@ -64,64 +52,23 @@
     <div class="right-content">
         <div class="container">
             <div class="feature">
-                <a href="#" rel="external">
-                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
-                </a>
-                <h2>登录背景页</h2>
-                <p>
-                    登录背景页面详细说明
-                </p>
-                <a class="more" href="Welcome/navToApiDemo" rel="external">
-                    Api Demo页面
-                </a>
+                <a href="#" rel="external"><img class="screen-shot" src="../../assets/images/bg.jpg" alt="屏幕截图"></a>
+                <h2>API Demo</h2>
+                <p>项目用到的API示例页面</p>
+                <a class="more" href="../Welcome/navToApiDemo" rel="external">Api Demo页面</a>
             </div>
             <div class="feature">
-                <a href="#" rel="external">
-                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
-                </a>
-                <h2>登录背景页</h2>
-                <p>
-                    登录背景页面详细说明
-                </p>
-                <a class="more" href="Welcome/navToApiIndex" rel="external">Api Index页面</a>
+                <a href="#" rel="external"><img class="screen-shot" src="../../assets/images/bg.jpg" alt="屏幕截图"></a>
+                <h2>API Index</h2>
+                <p>项目用的的API索引页面</p>
+                <a class="more" href="../Welcome/navToApiIndex" rel="external">Api Index页面</a>
             </div>
             <div class="feature">
-                <a href="#" rel="external">
-                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
-                </a>
-                <h2>登录背景页</h2>
-                <p>
-                    登录背景页面详细说明
-                </p>
-                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a>
+                <a href="#" rel="external"><img class="screen-shot" src="../../assets/images/bg.jpg" alt="屏幕截图"></a>
+                <h2>Lens Demo</h2>
+                <p>Lens Demo 示例</p>
+                <a class="more" href="../Welcome/navToLens" rel="external">Lens Demo页面</a>
             </div>
-            <div class="feature">
-                <a href="#" rel="external">
-                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
-                </a>
-                <h2>登录背景页</h2>
-                <p>
-                    登录背景页面详细说明
-                </p>
-                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
-            <div class="feature">
-                <a href="#" rel="external">
-                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
-                </a>
-                <h2>登录背景页</h2>
-                <p>
-                    登录背景页面详细说明
-                </p>
-                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
-            <div class="feature">
-                <a href="#" rel="external">
-                    <img class="screen-shot" src="assets/images/bg.jpg" alt="屏幕截图">
-                </a>
-                <h2>登录背景页</h2>
-                <p>
-                    登录背景页面详细说明
-                </p>
-                <a class="more" href="Welcome/navToApiDemo" rel="external">Api Demo页面</a></div>
         </div>
     </div>
 </section>
