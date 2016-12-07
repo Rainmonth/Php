@@ -52,19 +52,19 @@
     <div class="right-content">
         <div class="container">
             <div class="feature">
-                <a href="#" rel="external"><img class="screen-shot" src="../../assets/images/bg.jpg" alt="屏幕截图"></a>
+                <a href="#" rel="external"><img class="screen-shot" src="../../assets/common/images/bg.jpg" alt="屏幕截图"></a>
                 <h2>API Demo</h2>
                 <p>项目用到的API示例页面</p>
                 <a class="more" href="../Welcome/navToApiDemo" rel="external">Api Demo页面</a>
             </div>
             <div class="feature">
-                <a href="#" rel="external"><img class="screen-shot" src="../../assets/images/bg.jpg" alt="屏幕截图"></a>
+                <a href="#" rel="external"><img class="screen-shot" src="../../assets/common/images/bg.jpg" alt="屏幕截图"></a>
                 <h2>API Index</h2>
                 <p>项目用的的API索引页面</p>
                 <a class="more" href="../Welcome/navToApiIndex" rel="external">Api Index页面</a>
             </div>
             <div class="feature">
-                <a href="#" rel="external"><img class="screen-shot" src="../../assets/images/bg.jpg" alt="屏幕截图"></a>
+                <a href="#" rel="external"><img class="screen-shot" src="../../assets/common/images/bg.jpg" alt="屏幕截图"></a>
                 <h2>Lens Demo</h2>
                 <p>Lens Demo 示例</p>
                 <a class="more" href="../Welcome/navToLens" rel="external">Lens Demo页面</a>
