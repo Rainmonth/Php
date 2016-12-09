@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>当下</title>
+    <style type="text/css">
+        body div {
+            margin 0;
+            padding: 0;
+        }
+
+        .main {
+            display: flex;
+            padding: 20px;
+        }
+
+        .middle {
+            background: #52ffba;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-<div style="width: 900px;height: 400px; margin: 0 auto;text-align: center;background-color: #52ffba">
-    <!--todo 待完善-->
-    <p>当下</p>
-
+<div class="main">
+    <div class="middle">
+        当下
+    </div>
 </div>
 </body>
 </html>

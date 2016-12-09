@@ -65,11 +65,24 @@ class Welcome extends CI_Controller
 
     public function navToLens()
     {
-        $this->load->view('demos/lens');
+        $this->load->view('demos/lens.php');
     }
 
     public function navToLensTop()
     {
         $this->load->view('lens');
+    }
+
+    public function navToWelcome() {
+        $this->load->view('demos/spectral/index.php');
+    }
+    public function navToGeneric() {
+        $this->load->view('demos/spectral/generic.php');
+    }
+    public function navToElements() {
+        $this->load->view('demos/spectral/elements.php');
+    }
+    public function navTo($pageLocation = 'index') {
+        $this->load->view($pageLocation);
     }
 }

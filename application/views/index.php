@@ -69,6 +69,12 @@
                 <p>Lens Demo 示例</p>
                 <a class="more" href="../Welcome/navToLens" rel="external">Lens Demo页面</a>
             </div>
+            <div class="feature">
+                <a href="#" rel="external"><img class="screen-shot" src="../../assets/common/images/bg.jpg" alt="屏幕截图"></a>
+                <h2>欢迎主页</h2>
+                <p>欢迎主页</p>
+                <a class="more" href="../Welcome/navToWelcome" rel="external">欢迎主页</a>
+            </div>
         </div>
     </div>
 </section>
