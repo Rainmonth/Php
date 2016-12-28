@@ -229,7 +229,7 @@
                     console.log(JSON.stringify(data));
                     if (data.code == 1) {
                         console.log("登录成功");
-                        window.location.assign("../Welcome/naveToIndex");
+                        window.location.assign("../Welcome/naveToHome");
                     } else {
                         console.log("登录失败")
                         $message._show('failure', data.message)

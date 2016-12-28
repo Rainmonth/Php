@@ -28,9 +28,9 @@ class Welcome extends CI_Controller
 //        $this->load->view($pageLocation);
 //    }
 
-    public function naveToIndex()
+    public function naveToHome()
     {
-        $this->load->view('home/index');
+        $this->load->view('home/home');
     }
 
     public function navToApiDemo()
