@@ -201,9 +201,6 @@
             // Hide message.
             $message._hide();
 
-            // Disable submit.
-            $submit.disabled = true;
-
             // Process form.
             // Note: Doesn't actually do anything yet (other than report back with a "thank you"),
             // but there's enough here to piece together a working AJAX submission call that does.
@@ -213,41 +210,53 @@
             // window.location.assign("../Welcome/naveToIndex")
             console.log($username);
             console.log($password);
-            $.ajax({
-                type: "POST",
-                url: "../api/User/login",
-                dataType: "json",
-                data: {
-                    username: $username,
-                    psw: $password,
-                    platform: "android"
-                },
-                success: function (data) {
-                    console.log("访问成功");
-                    // window.location.assign("../Welcome/naveToIndex")
-                    // alert("访问成功" + JSON.stringify(data));
-                    console.log(JSON.stringify(data));
-                    if (data.code == 1) {
-                        console.log("登录成功");
-                        window.location.assign("../Welcome/naveToHome");
-                    } else {
-                        console.log("登录失败")
-                        $message._show('failure', data.message)
-                        // reset() 方法可以重置一个表单内所有的表单控件到初始状态
-                        // Enable submit.
-                        $submit.disabled = false;
-                        $form.reset();
-                    }
+            // 登录校验
+            if (isNull($username) || isNull($password)){
+                $message._show('failure', '用户名或密码为空');
+                // Disable submit.
+                // $submit.disabled = true;
+            } else {
+                $submit.disabled = false;
+                $.ajax({
+                    type: "POST",
+                    url: "../api/User/login",
+                    dataType: "json",
+                    data: {
+                        username: $username,
+                        psw: $password,
+                        platform: "android"
+                    },
+                    success: function (data) {
+                        console.log("访问成功");
+                        // window.location.assign("../Welcome/naveToIndex")
+                        // alert("访问成功" + JSON.stringify(data));
+                        console.log(JSON.stringify(data));
+                        if (data.code == 1) {
+                            console.log("登录成功");
+                            window.location.assign("../Welcome/naveToHome");
+                        } else {
+                            console.log("登录失败");
+                            $message._show('failure', data.message);
+                            // reset() 方法可以重置一个表单内所有的表单控件到初始状态
+                            // Enable submit.
+                            $submit.disabled = false;
+                            $form.reset();
+                        }
 
-                },
-                error: function (jqXHR) {
-                    console.log("发生错误");
-                    // window.location.assign("../Welcome/naveToIndex")
-                    alert("发生错误" + jqXHR.status);
-                }
-            });
+                    },
+                    error: function (jqXHR) {
+                        console.log("发生错误");
+                        // window.location.assign("../Welcome/naveToIndex")
+                        alert("发生错误" + jqXHR.status);
+                    }
+                });
+            }
         });
 
     })();
+
+    function isNull(data) {
+        return (data == "" || data == undefined || data == null);
+    }
 
 })();
