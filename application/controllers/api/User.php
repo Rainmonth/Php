@@ -40,7 +40,7 @@ class User extends CI_Controller
             ));
         }
         // 判断用户名是否存在
-        if ($this->user_model->is_user_exist($username)) {// 存在
+        if ($this->isUserExist($username)) {// 存在
             $login_result = $this->user_model->login($data);
             if ($login_result['code'] == 1) {
                 $user_info = $login_result['user_info'];
@@ -120,7 +120,7 @@ class User extends CI_Controller
             ));
         }
 
-        if ($this->user_model->is_user_exist($username)) {
+        if ($this->isUserExist($username)) {
             HCommon::output_json(array(
                 'code' => 0,
                 'message' => "注册失败,该账号已存在",
@@ -291,5 +291,14 @@ class User extends CI_Controller
         echo $this->input->cookie("id");//适用于控制器
         echo $this->input->cookie("username");//适用于控制器
         // 打印cookies
+    }
+
+    /**
+     * 判断用户名是否存在
+     * @param $username string 用户名
+     */
+    public function isUserExist($username)
+    {
+        return $this->user_model->is_user_exist($username);
     }
 }
