@@ -80,7 +80,7 @@ class User_model extends CI_Model
 
     /**
      * 判断用户名是否存在
-     * @param $username
+     * @param $username string
      * @return bool
      */
     public function is_user_exist($username)
@@ -113,7 +113,9 @@ class User_model extends CI_Model
 
         $sql = "select * from `sr_user` where username=?";
         $condition_value = array($username);
+
         $result_row = $this->db->query($sql, $condition_value);
+//        echo $this->db->last_query();
         $user_row = $result_row->row();
         if ($user_row->psw != $psw) {
             return array('code' => 0, 'message' => '登录密码不正确');
