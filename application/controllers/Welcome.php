@@ -80,7 +80,7 @@ class Welcome extends CI_Controller
 
     public function navToWelcome()
     {
-        $this->load->view('demos/spectral/home.php');
+        $this->load->view('demos/spectral/index.php');
     }
 
     public function navToGeneric()

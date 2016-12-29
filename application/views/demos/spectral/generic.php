@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
     <script src="../../../../assets/common/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="../../../../assets/home/css/main.css"/>
+    <link rel="stylesheet" href="../../../../assets/css/home/main.css"/>
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="../../../../assets/home/css/ie8.css"/><![endif]-->
+    <link rel="stylesheet" href="../../../../assets/css/home/ie8.css"/><![endif]-->
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../../../../assets/home/css/ie9.css"/><![endif]-->
+    <link rel="stylesheet" href="../../../../assets/css/home/ie9.css"/><![endif]-->
 </head>
 <body>
 
@@ -114,7 +114,7 @@
 <script src="../../../../assets/common/js/util.js"></script>
 <!--[if lte IE 8]>
 <script src="../../../../assets/common/js/ie/respond.min.js"></script><![endif]-->
-<script src="../../../../assets/home/js/main.js"></script>
+<script src="../../../../assets/js/home/main.js"></script>
 
 </body>
 </html>

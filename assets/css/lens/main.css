@@ -739,7 +739,7 @@ dl dd {
     cursor: pointer;
     display: none;
     z-index: 1;
-    background: url("../images/close-small-alt.svg") no-repeat 0.5em 0.5em;
+    background: url("../../images/lens/close-small-alt.svg") no-repeat 0.5em 0.5em;
     left: 0;
 }
 
@@ -1031,7 +1031,7 @@ body.is-loading-1 #main {
     top: 0;
     width: 4em;
     height: 4em;
-    background-image: url("../images/close.svg");
+    background-image: url("../../images/lens/close.svg");
     background-repeat: no-repeat;
     background-size: 64px 64px;
     cursor: pointer;
@@ -1048,7 +1048,7 @@ body.is-loading-1 #main {
     width: 6em;
     height: 6em;
     margin-top: -3em;
-    background-image: url("../images/arrow.svg");
+    background-image: url("../../images/lens/arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1130,7 +1130,7 @@ body.is-loading-1 #main {
     left: 50%;
     width: 3em;
     height: 3em;
-    background-image: url("../images/spinner.svg");
+    background-image: url("../../images/lens/spinner.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1151,7 +1151,7 @@ body.fullscreen #viewer {
 }
 
 body.fullscreen #viewer .inner .toggle {
-    background-image: url("../images/open.svg");
+    background-image: url("../../images/lens/open.svg");
 }
 
 body.is-loading-1 #viewer {
@@ -1181,7 +1181,7 @@ body.is-loading-2 #viewer .slide {
         -webkit-transition: opacity 0.75s ease;
         -ms-transition: opacity 0.75s ease;
         transition: opacity 0.75s ease;
-        background-image: url("../images/open.svg");
+        background-image: url("../../images/lens/open.svg");
         opacity: 0;
         right: 0;
     }
@@ -1200,12 +1200,12 @@ body.is-loading-2 #viewer .slide {
 
     #viewer .inner .nav-next,
     #viewer .inner .nav-previous {
-        background-image: url("../images/arrow-small.svg");
+        background-image: url("../../images/lens/arrow-small.svg");
         background-size: 32px 32px;
     }
 
     body.fullscreen #viewer .inner .toggle {
-        background-image: url("../images/open-small.svg");
+        background-image: url("../../images/lens/open-small.svg");
     }
 
 }
@@ -1225,7 +1225,7 @@ body.is-loading-2 #viewer .slide {
     }
 
     #viewer .inner .toggle {
-        background-image: url("../images/close-small.svg") !important;
+        background-image: url("../../images/lens/close-small.svg") !important;
         background-size: 32px 32px;
     }
 

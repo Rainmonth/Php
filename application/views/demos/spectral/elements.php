@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
     <script src="../../../../assets/common/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="../../../../assets/home/css/main.css"/>
+    <link rel="stylesheet" href="../../../../assets/css/home/main.css"/>
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="../../../../assets/home/css/ie8.css"/><![endif]-->
+    <link rel="stylesheet" href="../../../../assets/css/home/ie8.css"/><![endif]-->
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../../../../assets/home/css/ie9.css"/><![endif]-->
+    <link rel="stylesheet" href="../../../../assets/css/home/ie9.css"/><![endif]-->
 </head>
 <body>
 
@@ -354,29 +354,29 @@
                     <div class="box alt">
                         <div class="row uniform 50%">
                             <div class="12u"><span class="image fit"><img
-                                        src="../../../../assets/home/images/banner.jpg" alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic01.jpg"
+                                        src="../../../../assets/images/home/banner.jpg" alt=""/></span></div>
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic01.jpg"
                                                                          alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic02.jpg"
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic02.jpg"
                                                                          alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic03.jpg"
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic03.jpg"
                                                                          alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic03.jpg"
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic03.jpg"
                                                                          alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic02.jpg"
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic02.jpg"
                                                                          alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic01.jpg"
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic01.jpg"
                                                                          alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic02.jpg"
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic02.jpg"
                                                                          alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic01.jpg"
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic01.jpg"
                                                                          alt=""/></span></div>
-                            <div class="4u"><span class="image fit"><img src="../../../../assets/home/images/pic03.jpg"
+                            <div class="4u"><span class="image fit"><img src="../../../../assets/images/home/pic03.jpg"
                                                                          alt=""/></span></div>
                         </div>
                     </div>
                     <h5>Left &amp; Right</h5>
-                    <p><span class="image left"><img src="../../../../assets/home/images/pic04.jpg" alt=""/></span>Morbi
+                    <p><span class="image left"><img src="../../../../assets/images/home/pic04.jpg" alt=""/></span>Morbi
                         mattis mi consectetur
                         tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris
                         maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit
@@ -394,7 +394,7 @@
                         arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut
                         aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla
                         tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-                    <p><span class="image right"><img src="../../../../assets/home/images/pic05.jpg" alt=""/></span>Vestibulum
+                    <p><span class="image right"><img src="../../../../assets/images/home/pic05.jpg" alt=""/></span>Vestibulum
                         ultrices risus
                         velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum
                         porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex
@@ -441,7 +441,7 @@
 <script src="../../../../assets/common/js/util.js"></script>
 <!--[if lte IE 8]>
 <script src="../../../../assets/common/js/ie/respond.min.js"></script><![endif]-->
-<script src="../../../../assets/home/js/main.js"></script>
+<script src="../../../../assets/js/home/main.js"></script>
 
 </body>
 </html>

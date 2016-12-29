@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
     <script src="../../../../assets/common/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="../../../../assets/home/css/main.css"/>
+    <link rel="stylesheet" href="../../../../assets/css/home/main.css"/>
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="../../../../assets/home/css/ie8.css"/><![endif]-->
+    <link rel="stylesheet" href="../../../../assets/css/home/ie8.css"/><![endif]-->
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../../../../assets/home/css/ie9.css"/><![endif]-->
+    <link rel="stylesheet" href="../../../../assets/css/home/ie9.css"/><![endif]-->
 </head>
 <body class="landing">
 
@@ -73,7 +73,7 @@
     <!-- Two -->
     <section id="two" class="wrapper alt style2">
         <section class="spotlight">
-            <div class="image"><img src="../../../../assets/home/images/pic01.jpg" alt=""/></div>
+            <div class="image"><img src="../../../../assets/images/home/pic01.jpg" alt=""/></div>
             <div class="content">
                 <h2>Magna primis lobortis<br/>
                     sed ullamcorper</h2>
@@ -82,7 +82,7 @@
             </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="../../../../assets/home/images/pic02.jpg" alt=""/></div>
+            <div class="image"><img src="../../../../assets/images/home/pic02.jpg" alt=""/></div>
             <div class="content">
                 <h2>Tortor dolore feugiat<br/>
                     elementum magna</h2>
@@ -91,7 +91,7 @@
             </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="../../../../assets/home/images/pic03.jpg" alt=""/></div>
+            <div class="image"><img src="../../../../assets/images/home/pic03.jpg" alt=""/></div>
             <div class="content">
                 <h2>Augue eleifend aliquet<br/>
                     sed condimentum</h2>
@@ -183,7 +183,7 @@
 <script src="../../../../assets/common/js/util.js"></script>
 <!--[if lte IE 8]>
 <script src="../../../../assets/common/js/ie/respond.min.js"></script><![endif]-->
-<script src="../../../../assets/home/js/main.js"></script>
+<script src="../../../../assets/js/home/main.js"></script>
 
 </body>
 </html>

@@ -91,9 +91,9 @@
 
             // Images (in the format of 'url': 'alignment').
             images: {
-                './assets/eventually/images/tl1.jpg': 'center',
-                './assets/eventually/images/tl2.jpeg': 'center',
-                './assets/eventually/images/tl3.jpg': 'center'
+                'http://local.rainmonth.com/assets/images/eventually/tl1.jpg': 'center',
+                'http://local.rainmonth.com/assets/images/eventually/tl2.jpeg': 'center',
+                'http://local.rainmonth.com/assets/images/eventually/tl3.jpg': 'center'
             },
 
             // Delay.
