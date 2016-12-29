@@ -11,11 +11,11 @@
     <script src="../../assets/common/js/jquery.min.js"></script>
     <!--[if lte IE 8]>
     <script src="../../assets/common/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="../../assets/css/eventaully/main.css"/>
+    <link rel="stylesheet" href="../../assets/css/eventually/main.css"/>
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="../../assets/css/eventaully/ie8.css"/><![endif]-->
+    <link rel="stylesheet" href="../../assets/css/eventually/ie8.css"/><![endif]-->
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../../assets/css/eventaully/ie9.css"/><![endif]-->
+    <link rel="stylesheet" href="../../assets/css/eventually/ie9.css"/><![endif]-->
 </head>
 <body>
 
@@ -51,7 +51,7 @@
 <!--[if lte IE 8]>
 <script src="../../assets/common/js/jquery.min.js"></script>
 <script src="../../assets/common/js/ie/respond.min.js"></script><![endif]-->
-<script src="../../assets/js/eventaully/main.js"></script>
+<script src="../../assets/js/eventually/main.js"></script>
 
 </body>
 </html>
