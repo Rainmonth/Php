@@ -207,7 +207,7 @@
             // 设置一个定时器，在定时器到期后执行function函数
 
             // 跳转到首页
-            // window.location.assign("../Welcome/naveToIndex")
+            // window.location.assign("../Navigation/naveToIndex")
             console.log($username);
             console.log($password);
             // 登录校验
@@ -228,12 +228,12 @@
                     },
                     success: function (data) {
                         console.log("访问成功");
-                        // window.location.assign("../Welcome/naveToIndex")
+                        // window.location.assign("../Navigation/naveToIndex")
                         // alert("访问成功" + JSON.stringify(data));
                         console.log(JSON.stringify(data));
                         if (data.code == 1) {
                             console.log("登录成功");
-                            window.location.assign("../Welcome/naveToHome");
+                            window.location.assign("../Navigation/naveToHome");
                         } else {
                             console.log("登录失败");
                             $message._show('failure', data.message);
@@ -246,7 +246,7 @@
                     },
                     error: function (jqXHR) {
                         console.log("发生错误");
-                        // window.location.assign("../Welcome/naveToIndex")
+                        // window.location.assign("../Navigation/naveToIndex")
                         alert("发生错误" + jqXHR.status);
                     }
                 });

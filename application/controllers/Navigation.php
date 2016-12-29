@@ -1,7 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller
+/**
+ * Class Navigation
+ * 主要负责页面间的跳转
+ */
+class Navigation extends CI_Controller
 {
 
     /**
@@ -91,6 +95,11 @@ class Welcome extends CI_Controller
     public function navToElements()
     {
         $this->load->view('demos/spectral/elements.php');
+    }
+
+    public function navToMultiverse()
+    {
+        $this->load->view('demos/multiverse/index.html');
     }
 
     public function navTo($pageLocation = 'index')

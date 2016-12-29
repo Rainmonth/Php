@@ -19,16 +19,16 @@
 
     <!-- Header -->
     <header id="header" class="alt">
-        <h1><a href="../Welcome/navToWelcome">荏苒追寻</a></h1>
+        <h1><a href="../Navigation/navToWelcome">荏苒追寻</a></h1>
         <nav id="nav">
             <ul>
                 <li class="special">
                     <a href="#menu" class="menuToggle"><span>Menu</span></a>
                     <div id="menu">
                         <ul>
-                            <li><a href="../Welcome/navToWelcome">Home</a></li>
-                            <li><a href="../Welcome/navToGeneric">Generic</a></li>
-                            <li><a href="../Welcome/navToElements">Elements</a></li>
+                            <li><a href="../Navigation/navToWelcome">Home</a></li>
+                            <li><a href="../Navigation/navToGeneric">Generic</a></li>
+                            <li><a href="../Navigation/navToElements">Elements</a></li>
                             <li><a href="#">Sign Up</a></li>
                             <li><a href="#">Log In</a></li>
                         </ul>
