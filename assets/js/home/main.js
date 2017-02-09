@@ -28,13 +28,11 @@
         if (skel.vars.mobile)
             $body.addClass('is-mobile');
         else
-            skel
-                .on('-medium !medium', function () {
-                    $body.removeClass('is-mobile');
-                })
-                .on('+medium', function () {
-                    $body.addClass('is-mobile');
-                });
+            skel.on('-medium !medium', function () {
+                $body.removeClass('is-mobile');
+            }).on('+medium', function () {
+                $body.addClass('is-mobile');
+            });
 
         // Fix: Placeholder polyfill.
         $('form').placeholder();
@@ -73,8 +71,7 @@
         if (skel.vars.IEVersion < 9)
             $header.removeClass('alt');
 
-        if ($banner.length > 0
-            && $header.hasClass('alt')) {
+        if ($banner.length > 0 && $header.hasClass('alt')) {
 
             $window.on('resize', function () {
                 $window.trigger('scroll');
