@@ -27,8 +27,8 @@
 
 <!-- Signup Form -->
 <form id="signup-form" method="post" action="#">
-    <input type="text" name="username" id="username" placeholder="Username/Email/Phone"/>
-    <input type="password" name="password" id="password" placeholder="Password"/>
+    <input type="text" name="username" id="username" placeholder="Username/Email/Phone" value="randy"/>
+    <input type="password" name="password" id="password" placeholder="Password" value="123456"/>
     <input type="submit" value="Sign Up"/>
 </form>
 
