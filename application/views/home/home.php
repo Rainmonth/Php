@@ -37,8 +37,8 @@
         <a class="border-button" href="http://123.59.130.154/phpmyadmin" target="_blank">mysql管理后台</a>
         <a class="border-button" href="http://f2er.club/">最牛前端</a>
         <a class="border-button" href="../Navigation/navToGallery">相册</a>
-        <a class="border-button" href="#">菜单五</a>
-        <a class="border-button" href="#">菜单六</a>
+        <a class="border-button" href="https://developer.android.google.cn">Google中国开发者网站</a>
+        <a class="border-button" href="https://developer.android.google.cn/studio/command-line/adb.html">android adb</a>
         <a class="border-button" href="#">菜单七</a>
         <a class="border-button" href="#">菜单八</a>
         <a class="border-button" href="#">菜单九</a>
