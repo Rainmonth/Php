@@ -37,6 +37,10 @@ class Navigation extends CI_Controller
         $this->load->view('home/home');
     }
 
+    public function navToHomeNew()
+    {
+        $this->load->view('home/home_new.html');
+    }
     public function navToApiDemo()
     {
         $this->load->view('api/demo');
