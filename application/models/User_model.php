@@ -124,6 +124,8 @@ class User_model extends CI_Model
             $user_info['username'] = $user_row->username;
             $user_info['psw'] = $user_row->psw;
             $user_info['avatar'] = $user_row->avatar;
+            $user_info['email'] = $user_row->email;
+            $user_info['mobile'] = $user_row->mobile;
             return array('code' => 1, 'message' => '登录成功', 'user_info' => $user_info);
         }
     }
