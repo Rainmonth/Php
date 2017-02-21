@@ -41,6 +41,7 @@ class Navigation extends CI_Controller
     {
         $this->load->view('home/home_new.html');
     }
+
     public function navToApiDemo()
     {
         $this->load->view('api/demo');
@@ -110,4 +111,21 @@ class Navigation extends CI_Controller
     {
         $this->load->view($pageLocation);
     }
+
+    /**
+     * 添加banner信息
+     */
+    public function navToAddBanner()
+    {
+        $this->load->view('manage/add_banner');
+    }
+
+    /**
+     * 添加文章信息
+     */
+    public function navToAddArticle()
+    {
+        $this->load->view('manage/add_article');
+    }
+
 }

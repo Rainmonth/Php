@@ -39,8 +39,8 @@
         <a class="border-button" href="../Navigation/navToGallery">相册</a>
         <a class="border-button" href="https://developers.google.cn/">Google中国开发者网站</a>
         <a class="border-button" href="https://developer.android.google.cn/studio/command-line/adb.html">android adb</a>
-        <a class="border-button" href="#">菜单七</a>
-        <a class="border-button" href="#">菜单八</a>
+        <a class="border-button" href="../Navigation/navToAddBanner">add banner</a>
+        <a class="border-button" href="../Navigation/navToAddArticle">add article</a>
         <a class="border-button" href="#">菜单九</a>
         <a class="border-button" href="#">菜单十</a>
         <a class="border-button" href="#">菜单十</a>
