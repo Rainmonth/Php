@@ -7,6 +7,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class Navigation extends CI_Controller
 {
+    public function __construct()
+    {
+        // 初始化该页面要用到的Model
+        parent::__construct();
+        $this->load->model('memory_model');
+//        $this->load->model('favorites_model');
+//        $this->load->model('rongcloud_model');
+//        $this->load->model('category_model');
+    }
+
 
     /**
      * Index Page for this controller.
@@ -32,8 +42,17 @@ class Navigation extends CI_Controller
 //        $this->load->view($pageLocation);
 //    }
 
+    /**
+     * 获取用户信息
+     */
+    private function getUserInfo()
+    {
+
+    }
+
     public function naveToHome()
     {
+        // todo 以数组的形式传递登录之后获取到的信息
         $this->load->view('home/home');
     }
 
@@ -52,9 +71,13 @@ class Navigation extends CI_Controller
         $this->load->view('api/index');
     }
 
+    /**
+     * 跳转到回忆页面
+     */
     public function navToMemory()
     {
-        $this->load->view('pages/nav_memory');
+        $memory_list = $this->memory_model->get_all_memory_list();
+        $this->load->view('pages/nav_memory', array('memory_list' => $memory_list));
     }
 
     public function navToCurrent()
