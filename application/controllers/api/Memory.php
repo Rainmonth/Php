@@ -14,7 +14,7 @@ class Memory extends CI_Controller
         $this->load->model("memory_model");
     }
 
-    public function add_personal_memory()
+    public function addPersonalMemory()
     {
         $title = $this->input->post("title");
 //        $username = $this->input->post('username');
@@ -29,8 +29,13 @@ class Memory extends CI_Controller
         $this->user_model->add_personal_memory($data);
     }
 
-    public function delete_personal_memory()
+    public function deletePersonalMemory()
     {
 
+    }
+
+    public function updatePersonalMemory()
+    {
+        
     }
 }
